@@ -5,22 +5,27 @@
   padding: 0;
 }
 
-.container {
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
   background-color: hsl(233deg, 47%, 7%);
-  height: 80vh;
-  width: 90vw;
-  margin: auto;
-  padding: auto;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
 }
 .container b {
   color: hsl(277deg, 64%, 61%);
@@ -29,44 +34,55 @@
   color: white;
   font-size: 15px;
   font-family: "Inter", sans-serif;
-  display: block;
   text-align: left;
 }
 .container h1 {
   color: white;
-  font-family: "Lexend Deca", sans-serif;
   margin-bottom: 20px;
-  margin-left: 90px;
 }
 .container .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  width: 80vw;
-  height: 50vh;
   background-color: hsl(244deg, 38%, 16%);
   border-radius: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  top: 15vh;
-  left: 10vh;
-  right: 10vh;
 }
-.container .box img {
-  height: 50vh;
-  width: 35vw;
+.container .box .foto {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  margin-left: 35vh;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .container .box .text {
-  margin-top: 10vh;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .container .box .textparagraph {
   width: 50vh;
   margin-left: 90px;
+}
+.container .box .number-box {
+  margin: 10px;
+  display: inline-block;
+}
+.container .box .number-box .num {
+  margin-top: 10vh;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container .box .number-box p {
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
